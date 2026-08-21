@@ -65,6 +65,12 @@ footer{
     border: 1px solid var(--primary-gray-alt);
     padding: 24px;
     box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+    user-select: none;
+}
+
+.card-main:hover .card-title{
+    color: var(--primary-yellow);
+    cursor: pointer;
 }
 
 .card-img{
