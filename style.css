@@ -66,18 +66,19 @@ footer{
     padding: 24px;
     box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
     user-select: none;
+    cursor: pointer;
 }
 
 .card-main:hover .card-title{
     color: var(--primary-yellow);
-    cursor: pointer;
 }
 
 .card-img{
     height: 200px;
-    width: auto;
+    width: 100%;
     background: var(--primary-yellow);
     border-radius: 20px;
+    object-fit: cover;
     overflow: hidden;
 }
 
@@ -147,4 +148,33 @@ footer{
     font-size: 14px;
     font-family: var(--font-xb);
     font-weight: 800;
+}
+
+@media screen and (max-width: 375px){
+    .card-main{
+        height: max-content;
+        max-height: 501px;
+        width: 327px;
+    }
+
+    .card-img{
+        width: 100%;
+        max-width: 279px;
+    }
+
+    .card-cat{
+        font-size: 12px;
+    }
+
+    .card-date{
+        font-size: 12px;
+    }
+
+    .card-title{
+        font-size: 20px;
+    }
+
+    .card-desc{
+        font-size: 14px;
+    }
 }
